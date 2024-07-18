@@ -5,13 +5,12 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-    <h1>Resultado del Formulario</h1>
     <div id="form" class="list">
         <h2>Datos Enviados:</h2>
         <p><strong>Nombre:</strong> <span th:text="${formData.name}"></span></p>
         <p><strong>Apellido:</strong> <span th:text="${formData.lastName}"></span></p>
         <p><strong>Profesión:</strong> <span th:text="${formData.title}"></span></p>
-        <a href="/">Volver al formulario</a>
+        <a href="/">Volver al formulario</a><br>
     </div>
 </body>
 </html>

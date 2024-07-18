@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-    <h1>Formulario</h1>
     <div id="form">
+        <h1>Formulario</h1>
         <form action="#" th:action="@{/submit}" th:object="${formData}" method="post">
             <label for="name">Nombre:</label>
             <input type="text" id="name" th:field="*{name}" required><br>
@@ -14,7 +14,9 @@
             <input type="text" id="lastName" th:field="*{lastName}" required><br>
             <label for="title">Profesión:</label>
             <input type="text" id="title" th:field="*{title}" required></input><br>
-            <button type="submit">Enviar</button>
+            <div id="button">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </div>
 </body>
